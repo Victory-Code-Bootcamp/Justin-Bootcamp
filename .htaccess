@@ -1,0 +1,3 @@
+# .htaccess file to restrict access to the parent directory
+Order Allow,Deny
+Deny from all
