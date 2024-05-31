@@ -84,9 +84,10 @@ header {
 }
 
 main {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
+
 
 footer {
     background-color: #111;
@@ -120,3 +121,46 @@ footer p {
     margin: 0%;
     padding: 0;
 }
+
+
+div.chessboard {
+width: 200px;
+height: 200px;
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+grid-template-rows: repeat(8, 1fr);
+align-content: center;
+margin-left: 42%;
+}
+
+div.square {
+  background-color: #120101;
+  border: 1px solid #f5f3f3;
+}
+
+div.chessboard > div:nth-child(even) {
+  background-color: #120101;
+}
+
+div.chessboard > div:nth-child(odd) {
+    background-color: #120101;
+}
+
+div.chessboard > div:nth-child(16n + 1),
+div.chessboard > div:nth-child(16n + 3),
+div.chessboard > div:nth-child(16n + 5),
+div.chessboard > div:nth-child(16n + 7),
+div.chessboard > div:nth-child(16n + 10),
+div.chessboard > div:nth-child(16n + 12),
+div.chessboard > div:nth-child(16n + 14),
+div.chessboard > div:nth-child(16n + 16) {
+background-color: #c21515;
+}
+
+main.center {
+    border: 5px solid;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
