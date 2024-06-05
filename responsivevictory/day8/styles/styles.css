@@ -21,6 +21,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 .topnav {
     overflow: hidden;
@@ -136,14 +137,13 @@ section {
 }
 main.center {
     border: 5px solid;
-    margin: auto;
     width: 50%;
     padding: 10px;
 }
 
 
 .magic-box {
-    width: 125px;
+    width: 150px;
     height: 200px;
     margin: 0 auto 20px;
     border: 2px solid #fff;
@@ -190,6 +190,9 @@ button:hover {
 main {
     padding: 10px;
     text-align: center;
+    position: relative; 
+    vertical-align: top;
+    margin-top: 5%;
 }
 
 footer {
