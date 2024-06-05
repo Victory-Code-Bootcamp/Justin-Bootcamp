@@ -1,15 +1,20 @@
 body {
+    -ms-progress-appearance: inherit;
     background-color: #000;
     color: #a70000;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    position: relative; 
+    min-height: 100vh;
 }
 
 header {
     background-color: #000000;
     padding: 10px 0;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navbar {
@@ -98,8 +103,8 @@ main.center {
 
 
 .magic-box {
-    width: 200px;
-    height: 300px;
+    width: 125px;
+    height: 200px;
     margin: 0 auto 20px;
     border: 2px solid #fff;
     position: relative;
@@ -152,21 +157,26 @@ footer {
     background-color: #111;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    vertical-align: auto;
+    margin: 0;
     position: fixed;
-    top: 80%;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
 }
 
 footer ul {
+    text-align: center;
     list-style-type: none;
     padding: 0;
+    vertical-align: auto;
 }
 
 footer li {
+    vertical-align: auto;
     display: inline;
     margin: 0 10px;
 }
-
 footer a {
     color: #b00;
     text-decoration: none;
